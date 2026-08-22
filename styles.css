@@ -212,8 +212,8 @@
   height: 15rem;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 2.5fr 1fr;
-  padding-top: 3rem;
+  grid-template-rows: 150px auto;
+  padding-top: 2rem;
 }
 
 .cards-container .projects .projects-card .color {
