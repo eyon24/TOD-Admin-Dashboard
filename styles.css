@@ -22,19 +22,82 @@
   grid-column: 2 / 3;
   display: grid;
   grid-template-columns: 1.7fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1.75fr;
+  row-gap: 4rem;
+  padding: 3rem 6rem;
 }
 
 .container .header .search {
+  display: grid;
+  grid-template-columns: 1fr 10fr;
+  align-items: center;
+}
+
+.container .header .search input {
+  background-color: #e2e7f1;
+  height: 5em;
+  border-radius: 50px;
+  border: none;
 }
 
 .container .header .profile {
+  display: flex;
+  padding-right: 7rem;
+  justify-content: end;
+  align-items: center;
+  gap: 4rem;
+}
+.container .header .profile .pfp-small {
+  border-radius: 50px;
+}
+
+.container .header .profile span {
+  font-weight: 500;
 }
 
 .container .header .greeting {
+  display: flex;
+  flex-direction: row;
+  gap: 4rem;
+  align-items: center;
+}
+
+.container .header .greeting .greeting-msg {
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 1fr 2fr;
+}
+
+.container .header .greeting .greeting-msg span {
+  font-size: 0.9em;
+}
+
+.container .header .greeting .greeting-msg .handle {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.container .header .greeting img {
+  width: 175px;
+  height: 175px;
+  border-radius: 100px;
 }
 
 .container .header .post {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+.container .header .post button {
+  width: 200px;
+  height: 80px;
+  border-radius: 75px;
+  border: none;
+  background-color: #1a92d3;
+  color: #ffffff;
+  font-size: 0.8em;
 }
 
 .container .sidebar {
@@ -86,11 +149,14 @@
 .container .content {
   grid-column: 2 / 3;
   display: grid;
+  background-color: #e2e7f1;
   grid-template-columns: 2.5fr 1fr;
   grid-template-rows: 1fr 1fr;
+  padding: 5rem 3rem;
 }
 
 .container .content .projects {
+  background-color: beige;
   grid-row: 1 / 3;
 }
 
