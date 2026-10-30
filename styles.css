@@ -175,14 +175,13 @@
 
 .container .content .projects .project-card-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(450px, 560px));
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   justify-content: space-between;
   gap: 1.75rem;
 }
 
 .container .content .projects .project-card-container .card {
-  height: 250px;
-  border: 1px solid gray;
+  height: 235px;
   border-radius: 0.7rem;
   background-color: #ffffff;
   display: grid;
